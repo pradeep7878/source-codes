@@ -1,0 +1,1666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- NORMAL CAROUSEL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- PAGE POPUP WHEN PAGE LOADS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			if(sessionStorage.getItem('disclaimer') !== 'true') {
+				$('#disclaimerModal').modal('show');
+				$('#disclaimerButton').on('click', function() {
+					sessionStorage.setItem('disclaimer', 'true');
+					$('#disclaimerModal').modal('hide');
+				});
+			}
+		});
+	</script>
+
+
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+
+
+    <script src="js/script.js" defer> </script>  
+
+
+</head>
+
+
+<body style="background-color: pink;">
+
+
+ <br><br>
+ 
+ 
+ 
+ 
+ 
+
+<!-- banner CAROUSEL START======================================================================= -->
+
+
+
+
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="row">
+           <img src="images/home-banner-corousel.jpg" alt="" style="width:100%">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="row">
+           <img src="images/home-banner-corousel2.jpg" alt="" width="100%">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="row">
+           
+                <img src="images/home-banner-corousel3.jpg" alt="" width="100%">
+            
+        </div>
+    </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  
+
+<style>
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .swiper-button-next{
+        color:#fff;
+        background-color:#4e4e4e;
+        padding: 40px 20px;
+        border-radius:5px;
+    }
+    .swiper-button-next:hover{
+        color:#fff;
+        background-color:#000;
+       
+    }
+    .swiper-button-prev{
+        color:#fff;
+        background-color:#4e4e4e;
+        padding: 40px 20px;
+        border-radius:5px;
+    }
+    .swiper-button-prev:hover{
+        color:#fff;
+        background-color:#000;
+       
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+     
+    }
+
+</style>
+
+
+
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+  
+      
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <br><br><br><br><br>
+
+<!-- NORMAL CAROUSEL START======================================================================= -->
+<section>
+<h1>1.NORMAL CAROUSEL</h1>
+<div class="container"> 
+    <div id="carouselExample" class="carousel slide carousel-fade"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button class="active carousel-icons" data-bs-target="#carouselExample" data-bs-slide-to="0"></button>
+            <button class="carousel-icons" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+            <button class="carousel-icons" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- CAROUSEL INNER -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/1.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/2.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/4.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/5.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/7.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/8.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="d-block w-100" src="images/9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PREV-NEXT BUTTON -->
+        <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel-icons"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel-icons"></span>
+        </button>
+    </div>
+</div>
+
+
+</section>
+
+
+
+<style>
+
+h1{
+    color:RED;
+    background-color: white;
+}
+
+@media (max-width:576px){
+.col-xs-4{
+    float: left;
+    width: 33.33%;
+}
+}
+</style>
+
+<!-- NORMAL CAROUSEL END======================================================================= -->
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+<!-- OWL CAROUSEL START======================================================================= -->
+
+<section>
+<h1>2.OWL CAROUSEL</h1>
+<div class="container reveal">
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/1.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/2.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/1.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/2.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/7.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/8.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="d-block w-100" src="images/9.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+  
+</section>
+
+<style>
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+</style>
+
+
+
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+
+<!-- OWL CAROUSEL END======================================================================= -->
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+  
+
+
+
+
+
+
+
+
+
+<!-- LOGO SLIDER START========================================================================= -->
+
+<section>
+<h1>3.LOGO SLIDER CAROUSEL</h1>
+<div class="slider reveal">
+    <div class="slide-track">
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+  
+  
+.slider {
+    margin-top: 70px;
+    background-color: pink;
+    padding: 8em 2em;
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+
+  .slide-track img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 10s linear infinite;
+  } 
+
+  .slide-track:hover img{
+    animation-play-state: paused;
+  }
+
+  
+  @keyframes scroll {
+    0% {transform: translateX(-1650%);}
+    50% {transform: translateX(300%);}
+    100% {transform: translatex(-1650%)}
+  }
+</style>
+
+
+<!-- LOGO SLIDER END========================================================================= -->
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+  <!-- TESTIMONIAL START=========================================================================== -->
+
+
+
+  <h1>4.TESTIMONIAL</h1>
+  <section class="services-style1-area mt-5 p-5">
+    <div class="container">
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
+            <div>
+                <p class="hover-underline-animation fade_in_left" style="margin-top:50px">Testimonials</p>
+            </div>
+            <br />
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
+
+        </div>
+
+        <div class="row"></div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <h3>Clients are very satisfied to work with <span style="color:#d5aa6d"> us</span></h3>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-right">
+        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
+            <i class="fa fa-arrow-left"></i>
+        </a>
+        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
+            <i class="fa fa-arrow-right"></i>
+        </a>
+    </div>
+    <div class="col-12">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+
+            <!--PRODUCT ROW 1 START-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <div class="card " style="padding:20px 15px;">
+                                <p>Customer</p>
+                                <div class="card-body">
+                                    <div class="sign d-flex">
+                                        <div style="width:50%;">
+                                            <img src="images/index/testimonial-male-icon.jpg" alt="" width="100%" />
+                                        </div>
+                                        <div class="sign-name ">
+                                            <h4>S. Srinivasan</h4>
+                                            <h6>"
+                                    Shanmugam Associate is the best Divorce Lawyer In Coimbatore. They Worked For My Case And Thanks For The Completion Of My Case.He is the best divorce lawyer in Cbe "</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <div class="card " style="padding:20px 30px;">
+                                <p>Customer</p>
+                                <div class="card-body">
+                                    <div class="sign d-flex ">
+                                        <div style="width:50%;">
+                                            <img src="images/index/testimonial-female-icon.png" alt="" width="100%" />
+                                        </div>
+                                        <div class="sign-name ">
+                                            <h4>Rakshi</h4>
+                                            <h6>"
+                                    He is the best advocate.whenever I was in trouble I would consult him. He is an advocate who does not go for money.he is very helpful and humble.thank you sir.
+                                "</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PRODUCT ROW 2 START-->
+                <div class="carousel-inner">
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                <div class="card " style="padding:20px 15px;">
+                                    <p>Customer</p>
+                                    <div class="card-body">
+                                        <div class="sign d-flex ">
+                                            <div style="width:50%;">
+                                                <img src="images/index/testimonial-female-icon.png" alt="" width="100%" />
+                                            </div>
+                                            <div class="sign-name ">
+                                                <h4>Nandhini</h4>
+                                                <h6>"
+                                    One of the best lawyers I have ever seen.such a great man who handles any situation in a different way.
+                                "</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                <div class="card " style="padding:20px 15px;">
+                                    <p>Customer</p>
+                                    <div class="card-body">
+                                        <div class="sign d-flex ">
+                                            <div style="width:50%;">
+                                                <img src="images/index/testimonial-male-icon.jpg" alt="" width="100%" />
+                                            </div>
+                                            <div class="sign-name ">
+                                                <h4>Ashok</h4>
+                                                <h6>"
+                                    Highly  knowledgeable ...   He  can understand  clients point of view ...   and a very nice human being
+
+                                "</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--PRODUCT ROW 3 START-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item ">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                    <div class="card " style="padding:20px 15px;">
+                                        <p>Customer</p>
+                                        </p>
+                                        <div class="card-body">
+                                            <div class="sign d-flex ">
+                                                <div style="width:50%;">
+                                                    <img src="images/index/testimonial-male-icon.jpg" alt="" width="100%" />
+                                                </div>
+                                                <div class="sign-name ">
+                                                    <h4>Muthu Kumar</h4>
+                                                    <h6>"
+                                    Very talented and is one of the most honest lawyers in coimbatore
+
+                                "</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                    <div class="card " style="padding:20px 15px;">
+                                        <p>Customer</p>
+                                        </p>
+                                        <div class="card-body">
+                                            <div class="sign d-flex ">
+                                                <div style="width:50%;">
+                                                    <img src="images/index/testimonial-female-icon.png" alt="" width="100%" />
+                                                </div>
+                                                <div class="sign-name">
+                                                    <h4>Deepa</h4>
+                                                    <h6>"
+                                    The most talented lawyer i ever met... Humble person
+
+                                "</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL END=========================================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- PAGE POPUP WHEN PAGE LOADS START========================================================= -->
+
+<!-- Script code in head which must be included -->
+
+<section>
+<h1>5.PAGE POPUP</h1>
+
+<!-- Disclaimer Modal -->
+<div class="modal fade" id="disclaimerModal" style="text-align:center" tabindex="-1" role="dialog" aria-labelledby="disclaimerModalLabel"> 
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!-- <div class="modal-header"> -->
+          <!-- <h4 class="modal-title " id="disclaimerModalLabel" >Our Disclaimer</h4> -->
+        <!-- </div> -->
+   
+          <!-- <p>This website is for informational purposes only. The information on this website is not legal advice and should not be used as a substitute for professional legal advice. By using this website, you agree to the terms of this disclaimer.</p> -->
+          <div class="modal-body" style="font-size:13px">
+     
+          <h4 class="modal-title " id="disclaimerModalLabel" >Our Disclaimer</h4>
+          <hr/> 
+          <div class="text-left">
+               <p>1. Shanmugham Associates does not, in compliance with rules of the Bar Council of India, solicit work or advertise its services. The purpose of this Website is to provide information about PLA and its members without advertising services or soliciting work.</p>
+              <p>2. <b>By clicking, “I Agree” below, please confirm that you have:</b>
+              <br>a. Not in any manner been advertised, solicited, invited or induced to provide any work or mandate to PLA or its members
+              <br>b. You have, of your own volition, sought information about PLA and its members for your own use;
+              <br>c. Not been provided any legal service in any manner. Any reliance of any material on this Website is at your own consequence
+              <br>d. Read, confirmed and accepted our Website’s Terms of Use and Privacy Policy.
+               </p>
+          </div>
+          <!-- <a class="aa" href="index.php">I Agree</a> -->
+          </div>
+
+        <div class="modal-footer">
+          <a id="disclaimerButton" class="aa" href="#" >I Agree</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Disclaimer Modal -->
+
+</section>
+
+<style>
+    
+ #disclaimerModal{
+    width: 100%;
+    background: #000 ;
+    
+ }
+</style>
+        
+
+<!-- PAGE POPUP WHEN PAGE LOADS END========================================================= -->
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- POPUP ONCLICK START========================================================= -->
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+<!-- POPUP ONCLICK END========================================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- TEXT CENTER FOR DIF. VIEW START=========================================================================== -->
+
+<section class="services-style1-area mt-5 p-5">
+  <h1>7.TEXT CENTER FOR DIF. VIEW</h1>
+    <div class="container reveal">
+        <h2 class="text-sm-end">HELLO</h2>
+        <h2 class="text-lg-end text-md-center text-sm-end text-xs-end" >HELLOOOO</h2>
+    </div>
+    <br><br>
+    <div class="text-center">
+        <img  src="images/owl6.jpg" alt="" />
+    </div>
+
+</section>
+
+<!-- TEXT CENTER FOR DIF. VIEW STOP=========================================================================== -->
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- TEXT ON PHOTO START=========================================================================== -->
+
+  <h1>8.TEXT ON PHOTO</h1>
+  <section class="">
+
+    <div class="parentContainer">
+        <img src="images/text-on-photo.jpg" alt="Landscape">
+        <div class="centered">Centered</div>
+        <div class="bottom-left">Bottom Left</div>
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+    </div>
+
+
+
+
+<style>
+
+
+    img{
+        
+        width: 100%;
+        }
+        
+        .parentContainer {
+        position: relative;
+        text-align: center;
+        color: white;
+        }
+        
+        .bottom-left {
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        }
+        
+        .top-left {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        }
+        
+        .top-right {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        }
+        
+        .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        }
+        
+        .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        bottom: 50%;
+        }
+
+</style>
+
+  </section>
+
+<!-- TEXT ON PHOTO END=========================================================================== -->
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- TEXT ON PHOTO START=========================================================================== -->
+
+<section class="">
+  <h1>9.ZOOM IN DIV</h1>
+<br><br><br>
+
+    <div class="container reveal animate__animated animate__zoomInDown active">
+        <h2 class="text-center">zoomInDown</h2><br><br><br>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis. </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="images/text-on-photo.jpg" alt="Landscape">
+
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+
+
+    <div class="container reveal animate__animated animate__zoomInUp active">
+        <h2 class="text-center">zoomInUp</h2><br><br><br>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis. </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="images/text-on-photo.jpg" alt="Landscape">
+
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+
+
+
+    <div class="container reveal animate__animated animate__zoomInLeft active">
+        <h2 class="text-center">zoomInLeft</h2><br><br><br>
+
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis. </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="images/text-on-photo.jpg" alt="Landscape">
+
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+
+    <div class="container reveal animate__animated animate__zoomInRight active">
+      <h2 class="text-center">zoomInRight</h2><br><br><br>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia velit suscipit dolorem voluptatum dicta quidem quos officiis animi vel nihil dolores, sunt ipsum laborum placeat perspiciatis? Quis, nesciunt blanditiis. </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="images/text-on-photo.jpg" alt="Landscape">
+
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    
+
+
+<style>
+
+
+</style>
+
+  </section>
+
+<!-- TEXT ON PHOTO END=========================================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TAB PANE GALLERY START====================================================================================== -->
+
+
+
+<div class="tab-container">
+    <h1>10.TAB PANE FADE</h1>
+    <div class="box">
+      <input type="radio" class="tab-toggle" name="tab-toggle" id="tab1" checked>
+      <input type="radio" class="tab-toggle" name="tab-toggle" id="tab2">
+      <input type="radio" class="tab-toggle" name="tab-toggle" id="tab3">
+      <input type="radio" class="tab-toggle" name="tab-toggle" id="tab4">
+  
+      <ul class="tab-list">
+        <li class="tab-item">
+          <label class="tab-trigger" for="tab1">Office Interior</label>
+        </li>
+        <li class="tab-item">
+          <label class="tab-trigger" for="tab2">Office Furniture</label>
+        </li>
+        <li class="tab-item">
+          <label class="tab-trigger" for="tab3">Home Interior</label>
+        </li>
+        <li class="tab-item">
+          <label class="tab-trigger" for="tab4">Home Furniture</label>
+        </li>
+      </ul>
+      
+      <div class="tab-container">
+        <div class="tab-content">
+                 <div class="col-lg-12 col-md-12 col-sm-12 home-interior">
+           <h3>Office Interior</h3><br>
+       </div>
+      
+      <div class="row row3">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/1.jpg" alt="img7" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/2.jpg" alt="img8" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/3.jpg" alt="img9" />
+          </div>
+      </div>
+      <div class="row row4">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/4.jpg" alt="img10" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/5.avif" alt="img11" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/6.jpg" alt="img12" />
+          </div>
+      </div>
+      
+      <br><br>
+            
+            
+            
+            
+        </div>
+        <div class="tab-content">
+                    
+      
+       <div class="col-lg-12 col-md-12 col-sm-12 home-interior">
+           <h3>Office Furniture</h3><br>
+       </div>
+      
+      <div class="row row3">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/7.jpg" alt="img7" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/8.jpg" alt="img8" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/9.jpg" alt="img9" />
+          </div>
+      </div>
+      <div class="row row4">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/owl1.jpg" alt="img10" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/owl2.jpg" alt="img11" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/owl3.jpg" alt="img12" />
+          </div>
+      </div>
+      
+          <br><br>
+      
+            
+        </div>
+        <div class="tab-content">
+                
+          <div class="col-lg-12 col-md-12 col-sm-12 home-interior">
+           <h3>Home Interior</h3><br>
+      </div>
+      <div class="row row1">
+         
+          <div class="col-lg-4 col-md-4 col-sm-12 ">
+              <img class="d-block w-100 " src="images/owl4.jpg" alt="img1" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100"  src="images/owl5.jpg" alt="img2" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/owl6.jpg" alt="img3" />
+          </div>
+      </div>
+      <div class="row row2">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/owl7.jpg" alt="img4" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/4.jpg" alt="img5" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/7.jpg" alt="img6" />
+          </div>
+      </div>
+      
+      <br><br>
+            
+        </div>
+        <div class="tab-content">
+                    <div class="col-lg-12 col-md-12 col-sm-12 home-interior">
+           <h3>Home Furniture</h3><br>
+          </div>
+      <div class="row row1">
+         
+          <div class="col-lg-4 col-md-4 col-sm-12 ">
+              <img class="d-block w-100 " src="images/owl9.jpg" alt="img1" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100"  src="images/owl3.jpg" alt="img2" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/6.jpg" alt="img3" />
+          </div>
+      </div>
+      <div class="row row2">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/7.jpg" alt="img4" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/2.jpg" alt="img5" />
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <img class="d-block w-100" src="images/owl1.jpg" alt="img6" />
+          </div>
+      </div>
+      
+      <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <style>
+  .tab-container {
+    max-width: 100%;
+    margin: 30px auto;
+  }
+  
+  .box {
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .tab-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    position: relative;
+  }
+  
+  /* tab list 會動的底線 */
+  .tab-list::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    background-color: #aaa;
+    transition: .3s;
+  }
+  
+  .tab-item {
+    flex: 1;
+    text-align: center;
+    transition: .3s;
+    /*opacity: 0.5;*/
+  }
+  
+  .tab-toggle {
+    display: none;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-toggle:nth-child(1):checked ~ .tab-list .tab-item:nth-child(1),
+  .tab-toggle:nth-child(2):checked ~ .tab-list .tab-item:nth-child(2), 
+  .tab-toggle:nth-child(3):checked ~ .tab-list .tab-item:nth-child(3),
+  .tab-toggle:nth-child(4):checked ~ .tab-list .tab-item:nth-child(4){
+    opacity: 1;
+  }
+  
+  /* tab slider*/
+  .tab-toggle:nth-child(2):checked ~ .tab-list::before {
+    transform: translateX(100%);
+  }
+  
+  .tab-toggle:nth-child(3):checked ~ .tab-list::before {
+    transform: translateX(200%);
+  }
+  
+  .tab-toggle:nth-child(4):checked ~ .tab-list::before {
+    transform: translateX(300%);
+  }
+  
+  /* 內容顯示控制 */
+  .tab-toggle:nth-child(1):checked ~ .tab-container .tab-content:nth-child(1),
+  .tab-toggle:nth-child(2):checked ~ .tab-container .tab-content:nth-child(2),
+  .tab-toggle:nth-child(3):checked ~ .tab-container .tab-content:nth-child(3),
+  .tab-toggle:nth-child(4):checked ~ .tab-container .tab-content:nth-child(4)
+  {
+    display: block;
+  }
+  
+  .tab-trigger {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .tab-container {
+    padding: 15px 30px;
+  }
+  
+  
+  .tab-container img{
+      margin:15px;
+      transform:scale(1);
+      display:block;
+      overflow:hidden;
+      width:100%;
+      position:relative;
+  }
+  
+  .tab-item:hover{
+      cursor: pointer;
+      background-color:black;
+      color:#fff;
+      font-weight:bold; 
+      transition:all 0.3s ease-in-out;
+       opacity: 1 !important;
+  }
+  .tab-list:hover{
+      cursor: pointer;
+  }
+  
+  
+  .tab-container img:hover{
+      transform:scale(1.03);
+      border-radius:10px;
+      transition:all 0.3s linear;
+      cursor: pointer;
+  }
+  
+  
+  </style>
+  
+ 
+  
+  <!-- TAB PANE GALLERY END====================================================================================== -->
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CALL TO ACTION START====================================================================================== -->
+
+    
+<h1>11.CALL TO ACTION</h1> 
+<div class="bot-div">
+
+
+    <a target="_blank" href="tel:+919884949030">
+    <div class="social-media" style="background-color:#181d5e;border-radius:10px;color:#fff;margin-bottom:10px"><i class="fa fa-phone" style="font-size:14px;padding:12px"></i></div>
+    </a>
+
+    <a target="_blank" href="https://wa.me/+919884949030">
+    <div class="social-media " style="background-color:#005600;border-radius:10px;color:#fff;margin-top:10px"><i class="fab fa-whatsapp" style="font-size:20px ; padding:10px"></i></div>
+    </a>
+</div>
+
+<style>
+
+
+.bot-div {
+    position: fixed;
+    bottom: 150px;
+    right: 15px;
+    width: 50px;
+    height: 40px;
+    color: #ffffff;
+	font-size: 14px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	line-height: 38px;
+	text-align: center;
+	z-index: 1000;
+	cursor: pointer;
+	/*background: #8A2BE2;*/
+	transition:all 1s linear;
+}
+.bot-div .social-media:hover {
+    transform:translateX(-4px);
+}
+
+</style>
+
+
+<!-- CALL TO ACTION END====================================================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BROCHURE FORM  START===================================================================== -->
+
+
+
+<div class="container-fluid brochure " >
+       
+    <div class="row " id="popup">
+        
+            <div class="col-lg-2 col-md-12 col-sm-12">
+            
+            </div>
+            
+        
+            <div class="col-lg-8">
+                 <div class="modal-content">
+    <!-- <div class="modal-header"> -->
+      <!-- <h4 class="modal-title " id="disclaimerModalLabel" >Our Disclaimer</h4> -->
+    <!-- </div> -->
+
+      <!-- <p>This website is for informational purposes only. The information on this website is not legal advice and should not be used as a substitute for professional legal advice. By using this website, you agree to the terms of this disclaimer.</p> -->
+      <div class="modal-body" >
+ 
+      <h4 class="modal-title " id="disclaimerModalLabel" >Our Disclaimer</h4>
+      <hr/> 
+      <div class="text-left points" >
+           <p>1. Shanmugham Associates does not, in compliance with rules of the Bar Council of India, solicit work or advertise its services. The purpose of this Website is to provide information about PLA and its members without advertising services or soliciting work.</p>
+          <p>2. <b>By clicking, “I Agree” below, please confirm that you have:</b>
+          <br>a. Not in any manner been advertised, solicited, invited or induced to provide any work or mandate to PLA or its members
+          <br>b. You have, of your own volition, sought information about PLA and its members for your own use;
+          <br>c. Not been provided any legal service in any manner. Any reliance of any material on this Website is at your own consequence
+          <br>d. Read, confirmed and accepted our Website’s Terms of Use and Privacy Policy.
+           </p>
+      </div>
+      <!-- <a class="aa" href="index.php">I Agree</a> -->
+      </div>
+
+    <div class="modal-footer">
+      <a id="disclaimerButton" class="aa" href="index.php" >I Agree</a>
+    </div>
+  </div>
+            </div>
+        
+        <div class="col-lg-2 col-md-12 col-sm-12">
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--<button class="btn btn-dark toggle-btn" onload="toggle()" ></button>-->
+
+
+
+
+<script>
+
+        addEventListener('DOMContentLoaded',function toggle(){
+    let blur = document.getElementById("body");
+    blur.classList.toggle('active');
+
+    let popup = document.getElementById("popup");
+    popup.classList.toggle('active');
+});
+
+
+
+</script>
+
+
+<style>
+.brochure-form {
+    padding:20px;
+    position: relative;
+}
+.brochure-form span{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+
+}
+.brochure-form span:hover{
+    cursor: pointer;
+}
+.form-container{
+    box-shadow: 0 0 5px black; 
+    padding: 25px;
+   
+    
+}
+.brochure-form input{
+    width: 100%;
+    border: none;
+    margin: 20px 0;
+    padding: 4px 20px;
+    border-radius: 5px;
+    outline:none;
+}
+.brochure-form input:focus{
+    width: 100%;
+    border: none;
+    margin: 20px 0;
+    padding: 4px 20px;
+    border-radius: 5px;
+    outline:none;
+    background-color:pink;
+}
+.brochure-form select{
+    width: 100%;
+    border: none;
+    margin: 20px 0;
+    padding: 4px 20px;
+    border-radius: 5px;
+}
+      
+.brochure-form input[type="submit"]{
+    width: 40%;
+
+}
+.brochure-form input[type="radio"]{
+    width: 40%;
+    justify-content: center;
+    margin: 0px auto;                    
+}
+.designation{
+    color: grey; 
+    /* background-color: red; */
+}
+
+
+#body.active{
+    filter: blur(100px);
+    pointer-events: none;
+    user-select: none;
+
+}
+
+
+#popup{
+    visibility: hidden;
+    opacity: 0;
+    /* position: sticky;
+    top: 100px;
+    z-index: 100; */
+    width: 80%;
+    height: 80%;
+    transition: all 0.5s linear;
+
+}
+
+#popup.active{
+   visibility: visible;
+   opacity: 1;
+    /* position: sticky;
+    top: 100px;
+    z-index: 100; */
+    position: fixed;
+    left:12%;
+    top:10%;
+    overflow-y: scroll;
+    transition: all 0.5s linear;
+}
+
+
+::-webkit-scrollbar {
+display: none;
+}
+
+
+
+</style>
+
+<!-- BROCHURE FORM END===================================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

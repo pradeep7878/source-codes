@@ -1,0 +1,87 @@
+/* ANIMATION CSS START======================================================================== */
+
+
+/* STYLE FOR ANIMATE CSS CLASSES  */
+
+.animate__animated {
+    display: none;
+  }
+  
+  .animate__animated.active {
+    display: block;
+  }
+  
+  .reveal.animate__animated.active{
+    animation-duration: 1s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  .reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+  }
+  
+  
+  
+  
+    .fade_in_up {
+      transform: translateY(-150px);
+      opacity: 0;
+      transition: all 3s ease;
+    }
+    .fade_in_up.active {
+      transform: translateY(0px);
+      opacity: 1;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+    }
+    
+    .fade_in_right {
+      transform: translateX(-400px);
+      opacity: 0;
+      transition: all 3s ease;
+    }
+    .fade_in_right.active {
+      transform: translateX(0px);
+      opacity: 1;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+    }
+  
+    .fade_in_left {
+      transform: translateX(200px);
+      opacity: 0;
+      transition: all 3s ease;
+    }
+    .fade_in_left.active {
+      transform: translateX(0px);
+      opacity: 1;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+    }
+    
+  /* ANIMATION CSS END======================================================================== */
+  
